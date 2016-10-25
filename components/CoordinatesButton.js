@@ -16,4 +16,4 @@ class CoordinatesButton extends React.Component {
   }
 }
 
-moudle.exports = CoordinatesButton
+module.exports = CoordinatesButton

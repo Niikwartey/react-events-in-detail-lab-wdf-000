@@ -8,9 +8,7 @@ class DelayedButton extends React.Component {
 
   clickHandler(event) {
     event.persist()
-    setTimeout(this.props.onDelayedClick(event), this.props.delay)
-    let coordinates = [event.clientX, event.clientY];
-    this.props.onReceiveCoordinates(coordinates);
+    setTimeout(() => {this.props.onDelayedClick(event)}, this.props.delay)
   }
 
   render() {
@@ -18,4 +16,4 @@ class DelayedButton extends React.Component {
   }
 }
 
-moudle.exports = DelayedButton
+module.exports = DelayedButton
